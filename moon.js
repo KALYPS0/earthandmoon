@@ -18,9 +18,9 @@ function draw(){
 	if (p<=4){
 		p=5;
 	}
+	translate()
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
-	myStars(200,200,3,9,6);
 
 	myEarth(350,400,250);
 
