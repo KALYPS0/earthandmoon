@@ -42,6 +42,9 @@ function myEarth(x,y,size){
 function myMoon(x,y,size){
 	//noStroke();
 	//fill(150);
+	fill(0);
+	ellipse(x,y-5,size,size);
+	noFill();
 	texture(imgM);
 	ellipse(x,y,size,size);
 }
