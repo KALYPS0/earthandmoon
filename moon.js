@@ -9,7 +9,7 @@ function setup(){
   createCanvas(800,800,WEBGL);
   frameRate(10);
   imgE=loadImage('assets/earth.jpg');
-  imgM=loadImage('assets/moon.jpg');
+  imgM=loadImage('assets/moon.png');
 }
 
 function draw(){
