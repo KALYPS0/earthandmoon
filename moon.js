@@ -36,7 +36,7 @@ function myEarth(x,y,size){
 	//noStroke();
 	//fill(0,150,200);
 	texture(imgE);
-	ellipse(x,y,size,size);
+	sphere(x,y,size,size);
 }
 
 function myMoon(x,y,size){
@@ -46,7 +46,7 @@ function myMoon(x,y,size){
 	ellipse(x,y-5,size,size);
 	noFill();
 	texture(imgM);
-	ellipse(x,y,size,size);
+	sphere(x,y,size,size);
 }
 
 function myStars(x, y, radius1, radius2, npoints) {
