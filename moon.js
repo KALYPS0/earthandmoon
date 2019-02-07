@@ -46,7 +46,7 @@ function myMoon(x,y,size){
 	ellipse(x,y-5,size,size);
 	noFill();
 	texture(imgM);
-	sphere(x,y,size,size);
+	sphere(x,y,size);
 }
 
 function myStars(x, y, radius1, radius2, npoints) {
