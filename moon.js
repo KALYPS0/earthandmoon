@@ -18,11 +18,11 @@ function draw(){
 	if (p<=4){
 		p=5;
 	}
-	translate(350,400);
+	translate(400,400);
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
 
-	myEarth(0,0,200);
+	myEarth(0,0,250);
 
 	let x = position + sin(angle) * radius;
 	let y = position + cos(angle) * radius/2;
