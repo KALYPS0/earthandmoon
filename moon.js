@@ -18,7 +18,7 @@ function draw(){
 	if (p<=4){
 		p=5;
 	}
-	translate(-400,-400);
+	//translate(-400,-400);
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
 
@@ -43,7 +43,7 @@ function myMoon(x,y,size){
 	//noStroke();
 	//fill(150);
 	fill(0);
-	ellipse(x,y-5,size,size);
+	ellipse(x,y+5,size,size);
 	noFill();
 	texture(imgM);
 	ellipse(x,y,size,size);
