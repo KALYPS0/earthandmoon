@@ -18,7 +18,7 @@ function draw(){
 	if (p<=4){
 		p=5;
 	}
-	translate(200,200);
+	translate(-400,-400);
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
 
@@ -36,7 +36,7 @@ function myEarth(x,y,size){
 	//noStroke();
 	//fill(0,150,200);
 	texture(imgE);
-	sphere(x,y,size,size);
+	ellipse(x,y,size,size);
 }
 
 function myMoon(x,y,size){
@@ -46,7 +46,7 @@ function myMoon(x,y,size){
 	ellipse(x,y-5,size,size);
 	noFill();
 	texture(imgM);
-	sphere(x,y,size);
+	ellipse(x,y,size,size);
 }
 
 function myStars(x, y, radius1, radius2, npoints) {
