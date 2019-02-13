@@ -1,15 +1,15 @@
-let imgE, imgM;
+//let imgE, imgM;
 
-let position =0;
+let position =325;
 let angle = 0.01;
 let radius = 200;
 let speed = 0.1;
 
 function setup(){
-  createCanvas(800,800,WEBGL);
+  createCanvas(800,800);
   frameRate(10);
-  imgE=loadImage('assets/earth.jpg');
-  imgM=loadImage('assets/moon.png');
+  //imgE=loadImage('assets/earth.jpg');
+  //imgM=loadImage('assets/moon.png');
 }
 
 function draw(){
@@ -22,7 +22,7 @@ function draw(){
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
 
-	myEarth(0,0,250);
+	myEarth(300,300,250);
 
 	let x = position + sin(angle) * radius;
 	let y = position + cos(angle) * radius/2;
@@ -33,19 +33,19 @@ function draw(){
   }
 
 function myEarth(x,y,size){
-	//noStroke();
-	//fill(0,150,200);
-	texture(imgE);
+	noStroke();
+	fill(0,150,200);
+	//texture(imgE);
 	ellipse(x,y,size,size);
 }
 
 function myMoon(x,y,size){
-	//noStroke();
-	//fill(150);
+	noStroke();
+	fill(150);
 	fill(0);
 	ellipse(x,y+5,size,size);
 	noFill();
-	texture(imgM);
+	//texture(imgM);
 	ellipse(x,y,size,size);
 }
 
