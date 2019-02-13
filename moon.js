@@ -2,12 +2,12 @@
 
 let position =325;
 let angle = 0.01;
-let radius = 200;
+let radius = 300;
 let speed = 0.1;
 
 function setup(){
-  createCanvas(800,800);
-  frameRate(10);
+  createCanvas(800,600);
+  frameRate(13);
   //imgE=loadImage('assets/earth.jpg');
   //imgM=loadImage('assets/moon.png');
 }
@@ -22,7 +22,7 @@ function draw(){
 	myStars(random(width),random(height),random(3),random(10),p);
 	myStars(random(width),random(height),random(3),random(10),p);
 
-	myEarth(300,300,250);
+	myEarth(400,425,250);
 
 	let x = position + sin(angle) * radius;
 	let y = position + cos(angle) * radius/2;
@@ -41,10 +41,9 @@ function myEarth(x,y,size){
 
 function myMoon(x,y,size){
 	noStroke();
-	fill(150);
 	fill(0);
-	ellipse(x,y+5,size,size);
-	noFill();
+	ellipse(x-5,y,size,size);
+	fill(150);
 	//texture(imgM);
 	ellipse(x,y,size,size);
 }
