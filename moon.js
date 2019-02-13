@@ -1,6 +1,6 @@
 let imgE, imgM;
 
-let position =325;
+let position =0;
 let angle = 0.01;
 let radius = 200;
 let speed = 0.1;
